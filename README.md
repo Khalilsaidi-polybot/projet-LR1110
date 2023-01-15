@@ -9,10 +9,12 @@
     <li><a href="#Définition de l’architecture globale du systèmes (ensemble d’objets, service en ligne (cloud))">Définition de l’architecture globale du systèmes (ensemble d’objets, service en ligne (cloud))</a>
       <ul>
         <li><a href="#1er bloc: acquisition">1er bloc: acquisition</a></li>
+        </ul> 
         <li><a href="#2eme bloc: connectivité">2 bloc: connectivité</a></li>
         <li><a href="#3eme bloc: traitement des données">3eme bloc: traitement des données</a></li>
         <li><a href="#4eme bloc: présentation des données">4eme bloc: présentation des données</a></li>
-      </ul> </li>
+      </ul> 
+    </li>
    <li><a href="#Définition de la sécurité globale (clé de chiffrage)">Définition de la sécurité globale (clé de chiffrage</a>
       <li><a href="#Respect de la vie privée du service (RGPD)">Respect de la vie privée du service (RGPD)</a>
       <li><a href="#Estimation du coût de la BOM du produit pour 5000 unités produites et estimation de la durée de vie de la batterie de l’objet">Estimation du coût de la BOM du produit pour 5000 unités produites et estimation de la durée de vie de la batterie de l’objet</a>
