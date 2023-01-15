@@ -162,7 +162,12 @@ Pour le dernier bloc on a choisi de présenter la position du tracker sur un pla
 
 
 
-
+<br />
+<div align="center">
+  <a href="https://github.com//Khalilsaidi-polybot/projet-LR1110/blob/main/README.md">
+    <img src="images/position.jpg" alt="image" width=40% height=40%>
+  </a>
+</div>
 
 
 
