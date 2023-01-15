@@ -1,5 +1,13 @@
+<br />
+<div align="right">
+    <img src="https://github.com/Khalilsaidi-polybot/projet-LR1110/blob/main/images/logo%20inp%20Polytech%20grenoble.png)" width="80" height="80">
+  </a>
+
 # projet-LR1110    
-![alt text](https://github.com/Khalilsaidi-polybot/projet-LR1110/blob/main/images/logo%20inp%20Polytech%20grenoble.png)
+
+
+
+
 
 <!-- TABLE OF CONTENTS -->
 <details>
