@@ -26,10 +26,8 @@
    <li><a href="#3- Définition de la sécurité globale (clé de chiffrage)">Définition de la sécurité globale (clé de chiffrage</a>
       <li><a href="#4- Respect de la vie privée du service (RGPD)">Respect de la vie privée du service (RGPD)</a>
       <li><a href="#5- Estimation du coût de la BOM du produit pour 5000 unités produites et estimation de la durée de vie de la batterie de l’objet">Estimation du coût de la BOM du produit pour 5000 unités produites et estimation de la durée de vie de la batterie de l’objet</a>
-       <li><a href="#6- Analyse (brève) du cycle de vie du produit “durable” et “sobre” (ACV)">Réaliser une analyse (brève) du cycle de vie du produit “durable” et “sobre” (ACV)</a>
-         
-          <li><a href="#7- Analyse d’avantages et inconvénients des produits concurrents"> Analyse d’avantages et inconvénients des produits concurrents</a>
-        
+      <li><a href="#6- Analyse (brève) du cycle de vie du produit “durable” et “sobre” (ACV)">Réaliser une analyse (brève) du cycle de vie du produit “durable” et “sobre” (ACV)</a>   
+       <li><a href="#7- Analyse d’avantages et inconvénients des produits concurrents"> Analyse d’avantages et inconvénients des produits concurrents</a>
   </ol>
 </details>
 
