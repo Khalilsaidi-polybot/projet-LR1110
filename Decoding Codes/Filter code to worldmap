@@ -1,0 +1,2 @@
+msg.payload = { "name":"PROJET_IOT_G3", "lat":msg.payload.location_solved.location.latitude, "lon":msg.payload.location_solved.location.longitude, "radius":(150-msg.payload.location_solved.location.accuracy)/10 }
+return msg;

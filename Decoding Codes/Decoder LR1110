@@ -1,0 +1,24 @@
+function Decoder(bytes, port) {
+    var decoded = {};
+
+    var latitude = (bytes[0] << 24) | (bytes[1] << 16) | (bytes[2] << 8) | bytes[3];
+    var longitude = (bytes[4] << 24) | (bytes[5] << 16) | (bytes[6] << 8) | bytes[7];
+    var altitude = (bytes[8] << 8) | bytes[9];
+    var velocity = (bytes[10] << 8) | bytes[11];
+    var heading = (bytes[12] << 8) | bytes[13];
+    var battery = bytes[14];
+    var rssi = bytes[15];
+    var snr = bytes[16];
+
+    // convert values
+    decoded.latitude = latitude / 1000000;
+    decoded.longitude = longitude / 1000000;
+    decoded.altitude = altitude / 1000;
+    decoded.velocity = velocity / 100;
+    decoded.heading = heading / 100;
+    decoded.battery = battery / 100;
+    decoded.rssi = rssi;
+    decoded.snr = snr / 10;
+
+    return decoded;
+}
