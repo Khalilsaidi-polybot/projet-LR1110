@@ -98,10 +98,19 @@ Pour le bloc de connectivité, Le tracker était déjà réclamée par l’utili
 <!-- 3eme bloc: traitement des données -->
 ### 3eme bloc: traitement des données
 
-
 Pour le bloc de traitement des données on va s'intéresser à la configuration de notre device, au format des messages uplink et downlink échangés et le filtrage des messages. Notre Devise LR1110, comme mentionné précédemment, est déjà réclamé sur TTN, donc il réussit de faire le Join et envoyer son message à base64 qui sera décodé et transformé en JSON sur le serveur TTN, notre rôle c’est récupérer ce message qui sera sous forme de buffer string, le rendre sous format JSON encore une fois, le filtrer et puis stocker les donnée dans un fichier .log ou les présenter sur une interface graphique.
 
+
+
+<div align="center">
+  <a href="https://github.com//Khalilsaidi-polybot/projet-LR1110/blob/main/README.md">
+    <img src="images/join reussi.PNG" alt="image" width=60% height=60%>
+  </a>
+</div>
+
 On a pu créer notre propre serveur en créant une instance élastique sur AWS de type linux debian. Sur notre machine virtuelle implémentée dans notre serveur, on a installé les outils nécessaires pour établir une communication avec le broker tels que Node-RED, TLS…) 
+
+
 
 
 <br />
@@ -127,31 +136,10 @@ On a pu créer notre propre serveur en créant une instance élastique sur AWS d
   </a>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 4eme bloc: présentation des données -->
-### 4eme bloc: présentation des données
-
-Pour le bloc de traitement des données on va s'intéresser à la configuration de notre device, au format des messages uplink et downlink échangés et le filtrage des messages. Notre Devise LR1110, comme mentionné précédemment, est déjà réclamé sur TTN, donc il réussit de faire le Join et envoyer son message à base64 qui sera décodé et transformé en JSON sur le serveur TTN, notre rôle c’est récupérer ce message qui sera sous forme de buffer string, le rendre sous format JSON encore une fois, le filtrer et puis stocker les donnée dans un fichier .log ou les présenter sur une interface graphique.
-
-<br />
-<div align="center">
-  <a href="https://github.com//Khalilsaidi-polybot/projet-LR1110/blob/main/README.md">
-    <img src="images/join reussi.PNG" alt="image" width=60% height=60%>
-  </a>
-</div>
+Il est important de mentionner les métriques logiciels dans cette partie.
+Les codes nécessaires pour réussir cette communication sont : 
+-le code du encodeur/décodeur sur le serveur TTN pour transformer les messages de la base64 vers JSON.
+- Le code de notre fonction sur NODE pour filtrer L’objet JSON afin d’avoir que la latitude et longitude ainsi que l’accuracy qui sera responsable de déterminer le rayon de la position du tracker.Vous pouvez trouvez les codes dans les fichiers dans le projet. Le fait de se baser sur des outils comme NODE pour gérer les flux nous permet d’utiliser moins de codes donc avoir une implémentation simple et robuste.
 
 
 
@@ -161,6 +149,18 @@ Pour le bloc de traitement des données on va s'intéresser à la configuration 
     <img src="images/flux.PNG" alt="image" width=60% height=60%>
   </a>
 </div>
+
+
+
+
+<!-- 4eme bloc: présentation des données -->
+### 4eme bloc: présentation des données
+
+Pour le dernier bloc on a choisi de présenter la position du tracker sur un plan en utilisant le package Worldmap et puis mettre un end point sur red-remote ce qui nous permet de visualiser la position sur votre téléphone.
+
+
+
+
 
 
 
