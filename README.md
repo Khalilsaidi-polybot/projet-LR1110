@@ -1,7 +1,7 @@
 <br />
-<div align="center">
+<div align="right">
   <a href="https://github.com//Khalilsaidi-polybot/projet-LR1110/blob/main/README.md">
-    <img src="images/logo inp Polytech grenoble.png" alt="Logo" width="80" height="80">
+    <img src="images/logo inp Polytech grenoble.png" alt="Logo" width=30% height=30%>
   </a>
 </div>
 
