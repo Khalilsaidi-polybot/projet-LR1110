@@ -26,7 +26,7 @@
    <li><a href="#3- Définition de la sécurité globale (clé de chiffrage)">Définition de la sécurité globale (clé de chiffrage</a>
       <li><a href="#4- Respect de la vie privée du service (RGPD)">Respect de la vie privée du service (RGPD)</a>
       <li><a href="#5- Estimation du coût de la BOM du produit pour 5000 unités produites et estimation de la durée de vie de la batterie de l’objet">Estimation du coût de la BOM du produit pour 5000 unités produites et estimation de la durée de vie de la batterie de l’objet</a>
-       <li><a href="#6- Réaliser une analyse (brève) du cycle de vie du produit “durable” et “sobre” (ACV)">Réaliser une analyse (brève) du cycle de vie du produit “durable” et “sobre” (ACV)</a>
+       <li><a href="#6- Analyse (brève) du cycle de vie du produit “durable” et “sobre” (ACV)">Réaliser une analyse (brève) du cycle de vie du produit “durable” et “sobre” (ACV)</a>
   </ol>
 </details>
 
@@ -287,11 +287,15 @@ Ici, la batterie est de type demi-AA et la durée de vie de la batterie dépend 
 
 
 <!-- Réaliser une analyse (brève) du cycle de vie du produit “durable” et “sobre” (ACV) -->
-## 6- Réaliser une analyse (brève) du cycle de vie du produit “durable” et “sobre” (ACV)
+## 6- Aanalyse (brève) du cycle de vie du produit “durable” et “sobre” (ACV)
 
 
 
 L’analyse du cycle de vie d’un produit correspond à l’analyse des impacts environnementaux du LR1110 depuis la production de celui-ci où sont pris en compte l’impact des matières premières tel que le silicium permettant la réalisation des chips, le plastique pour l’enveloppe ou d’autres matières pour le boitier. La phase de production est celle ou il faut prendre le plus en compte l’empreinte environnementale (énergie dépensée, pollution émise lors de l’impression et assemblage des produits composant le tracker…).
 
 Enfin, la consommation d’énergie est un autre des facteurs importants à prendre en compte. Cependant il n’est pas facile de justifier ces étapes avec des nombres concrètement puisqu’il est quasi impossible de remonter toute la chaîne de production, fabrication et d’assemblage.
+
+
+
+
 
