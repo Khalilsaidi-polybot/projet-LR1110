@@ -38,7 +38,7 @@ Notre projet porte sur l’étude d’un tracker Lora  permettant le suivi de tr
 Dans un premier temps,  nous avons commencé par travailler avec le tracker GPS Dragino LoRaWAN LGT-92-LI, basé sur le microcontrôleur STM32L072, qui envoie des données de géolocalisation et permet d’atteindre de longues portées à de faibles débits de données en minimisant la consommation électrique. Nous utilisons la version de tracker rechargeable, avec le boîtier de protection et tracking en temps réel et nous avons également la possibilité d’utiliser le port USB.Ceci dit, l’étude du lgt92 a été relativement rapide avant que nous soyons passé au LR1110.
 
 <!-- Analyse du marché des produits commerciaux concurrents -->
-## Analyse du marché des produits commerciaux concurrents
+## 1- Analyse du marché des produits commerciaux concurrents
 
 
  
@@ -51,7 +51,7 @@ Nous pouvons citer les trackers :  G62 ou Oyster de chez Digital matter ou les t
 
 
 <!-- Définition de l’architecture globale du systèmes (ensemble d’objets, service en ligne (cloud)) -->
-## Définition de l’architecture globale du systèmes (ensemble d’objets, service en ligne (cloud))
+## 2- Définition de l’architecture globale du systèmes (ensemble d’objets, service en ligne (cloud))
 
 
 Généralement l’architecture des systèmes IOT se ressemblent se. on a souvent au début de la chaîne un device pour l’acquisition des données ( capteurs, trackers…) , et puis on trouve le bloc de connectivité qui peut différer selon l'intérêt du projet(LORA, LTE-M, NBIOT…), ensuite on trouve le bloc du traitement des données afin de les rendre  exploitable et présentable, cette partie se fait dans un serveur et généralement sur une machine virtuelle ou on peut mettre des programmes tourner derrière (python,c++,c…) ou des outils de gestion des flux comme Node-RED qu’on a adopté comme solution dans notre projet.
@@ -68,6 +68,11 @@ Dans le cas de  notre projet, on essaye de remonter la donnée d’un tracker de
   </a>
 </div>
 
+
+<div align="center">
+ Architecture globale du systeme
+  </a>
+</div>
 
 On fait communiquer le tracker en lora avec la gateway fournis par fablab, récupérer les donnée en temps réel depuis le serveur TTN et finalement faire une intégration MQTT qui nous permettra de récupérer les données sur notre propre serveur afin de les traiter et les présenter sur un autre endpoint ( qu’il soit un fichier .log sur notre machine virtuelle ou une application sur un téléphone).
 
