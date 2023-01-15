@@ -79,7 +79,7 @@ On fait communiquer le tracker en lora avec la gateway fournis par fablab, récu
 
 
 <!-- 1er bloc: acquisition -->
-### 1er bloc: acquisition:
+###2-1- 1er bloc: acquisition:
 
 <br />
 <div align="center">
@@ -87,13 +87,20 @@ On fait communiquer le tracker en lora avec la gateway fournis par fablab, récu
     <img src="images/141188110.png" alt="image" width=30% height=30%>
   </a>
 </div>
+<div align="center">
+ LR1110
+  </a>
+</div>  
+
+
+<br />
 Pour le bloc d’acquisition on a un tracker LR1110 fournis de Semtech est un module de traqueur GPS/GNSS ultra-basse consommation qui intègre un récepteur GPS/GNSS haute sensibilité, une horloge temps réel (RTC), un processeur Arm Cortex-M0+ et une mémoire flash. Il prend en charge les signaux GPS, GLONASS, BeiDou, Galileo et QZSS et peut fonctionner avec une alimentation de seulement 1.8V à 3.3V. Le module peut être utilisé dans des applications telles que les trackers de localisation pour animaux, les suiveurs de vélos et les dispositifs de suivi de personnes.
 
 
 
 
 <!-- 2eme bloc: connectivité -->
-### 2eme bloc: connectivité:
+### 2-2- 2eme bloc: connectivité:
 
 Pour le bloc de connectivité, Le tracker était déjà réclamée par l’utilisateur sur un serveur ttn, pour qu’on puisse l’utiliser  on a partagé les droits d'accès à ce device avec nous. Les droits partagés étaient restreints or on n'avait pas accès à tout ( partie intégration, partie de décodage encodage…). Donc, pour satisfaire cette partie de connectivité, et pouvoir récupérer les données pour pouvoir les traiter ensuite, nous avons implémenter un client MQTT sur notre propre serveur et se souscrire sur le topic de ce device qui est lui même considéré comme un client sur le broker implémenter sur le serveur TTN.
 
@@ -101,7 +108,7 @@ Pour le bloc de connectivité, Le tracker était déjà réclamée par l’utili
 
 
 <!-- 3eme bloc: traitement des données -->
-### 3eme bloc: traitement des données
+### 2-3- 3eme bloc: traitement des données
 
 Pour le bloc de traitement des données on va s'intéresser à la configuration de notre device, au format des messages uplink et downlink échangés et le filtrage des messages. Notre Devise LR1110, comme mentionné précédemment, est déjà réclamé sur TTN, donc il réussit de faire le Join et envoyer son message à base64 qui sera décodé et transformé en JSON sur le serveur TTN, notre rôle c’est récupérer ce message qui sera sous forme de buffer string, le rendre sous format JSON encore une fois, le filtrer et puis stocker les donnée dans un fichier .log ou les présenter sur une interface graphique.
 
@@ -112,6 +119,15 @@ Pour le bloc de traitement des données on va s'intéresser à la configuration 
     <img src="images/join reussi.PNG" alt="image" width=60% height=60%>
   </a>
 </div>
+
+</div>
+<div align="center">
+join
+  </a>
+</div>  
+
+
+<br />
 
 On a pu créer notre propre serveur en créant une instance élastique sur AWS de type linux debian. Sur notre machine virtuelle implémentée dans notre serveur, on a installé les outils nécessaires pour établir une communication avec le broker tels que Node-RED, TLS…) 
 
@@ -125,6 +141,14 @@ On a pu créer notre propre serveur en créant une instance élastique sur AWS d
   </a>
 </div>
 
+</div>
+<div align="center">
+ instance elastique: Linux Debian
+  </a>
+</div>  
+
+
+<br />
 
 <br />
 <div align="center">
@@ -133,6 +157,14 @@ On a pu créer notre propre serveur en créant une instance élastique sur AWS d
   </a>
 </div>
 
+</div>
+<div align="center">
+ connexion au serveur
+  </a>
+</div>  
+
+
+<br />
 
 <br />
 <div align="center">
@@ -140,6 +172,16 @@ On a pu créer notre propre serveur en créant une instance élastique sur AWS d
     <img src="images/nodeee.png" alt="image" width=60% height=60%>
   </a>
 </div>
+
+
+</div>
+<div align="center">
+ Lancement de Node
+  </a>
+</div>  
+
+
+<br />
 
 Il est important de mentionner les métriques logiciels dans cette partie.
 Les codes nécessaires pour réussir cette communication sont : 
@@ -156,7 +198,14 @@ Les codes nécessaires pour réussir cette communication sont :
 </div>
 
 
+</div>
+<div align="center">
+Gestion des flux sur Node
+  </a>
+</div>  
 
+
+<br />
 
 <!-- 4eme bloc: présentation des données -->
 ### 4eme bloc: présentation des données
@@ -173,6 +222,15 @@ Pour le dernier bloc on a choisi de présenter la position du tracker sur un pla
     <img src="images/position.jpg" alt="image" width=40% height=40%>
   </a>
 </div>
+
+</div>
+<div align="center">
+Position du Tracker
+  </a>
+</div>  
+
+
+<br />
 
 <!-- Définition de la sécurité globale (clé de chiffrage) -->
 ## Définition de la sécurité globale (clé de chiffrage)
