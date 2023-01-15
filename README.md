@@ -64,7 +64,7 @@ Dans le cas de  notre projet, on essaye de remonter la donnée d’un tracker de
 <br />
 <div align="center">
   <a href="https://github.com//Khalilsaidi-polybot/projet-LR1110/blob/main/README.md">
-    <img src="images/LoRa-architecture-20.png" alt="imagelora" width=60% height=60%>
+    <img src="images/LoRa-architecture-20.jpg" alt="imagelora" width=60% height=60%>
   </a>
 </div>
 
