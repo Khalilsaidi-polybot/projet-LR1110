@@ -79,7 +79,7 @@ On fait communiquer le tracker en lora avec la gateway fournis par fablab, récu
 <br />
 <div align="center">
   <a href="https://github.com//Khalilsaidi-polybot/projet-LR1110/blob/main/README.md">
-    <img src="images/141188110.png" alt="image" width=60% height=60%>
+    <img src="images/141188110.png" alt="image" width=30% height=30%>
   </a>
 </div>
 Pour le bloc d’acquisition on a un tracker LR1110 fournis de Semtech est un module de traqueur GPS/GNSS ultra-basse consommation qui intègre un récepteur GPS/GNSS haute sensibilité, une horloge temps réel (RTC), un processeur Arm Cortex-M0+ et une mémoire flash. Il prend en charge les signaux GPS, GLONASS, BeiDou, Galileo et QZSS et peut fonctionner avec une alimentation de seulement 1.8V à 3.3V. Le module peut être utilisé dans des applications telles que les trackers de localisation pour animaux, les suiveurs de vélos et les dispositifs de suivi de personnes.
