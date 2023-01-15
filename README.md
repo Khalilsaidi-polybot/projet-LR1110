@@ -19,7 +19,7 @@
     <li><a href="#Définition de l’architecture globale du systèmes (ensemble d’objets, service en ligne (cloud))">Définition de l’architecture globale du systèmes (ensemble d’objets, service en ligne (cloud))</a>
       <ul>
         <li><a href="#1er bloc: acquisition">1er bloc: acquisition</a></li>
-        <li><a href="#2eme bloc: connectivité">2 bloc: connectivité</a></li>
+        <li><a href="#2eme bloc: connectivité">2eme bloc: connectivité</a></li>
         <li><a href="#3eme bloc: traitement des données">3eme bloc: traitement des données</a></li>
         <li><a href="#4eme bloc: présentation des données">4eme bloc: présentation des données</a></li>
       </ul> 
@@ -69,8 +69,82 @@ Dans le cas de  notre projet, on essaye de remonter la donnée d’un tracker de
 </div>
 
 
+On fait communiquer le tracker en lora avec la gateway fournis par fablab, récupérer les donnée en temps réel depuis le serveur TTN et finalement faire une intégration MQTT qui nous permettra de récupérer les données sur notre propre serveur afin de les traiter et les présenter sur un autre endpoint ( qu’il soit un fichier .log sur notre machine virtuelle ou une application sur un téléphone).
 
 
+
+<!-- 1er bloc: acquisition -->
+### 1er bloc: acquisition:
+
+<br />
+<div align="center">
+  <a href="https://github.com//Khalilsaidi-polybot/projet-LR1110/blob/main/README.md">
+    <img src="images/141188110.png" alt="image" width=60% height=60%>
+  </a>
+</div>
+Pour le bloc d’acquisition on a un tracker LR1110 fournis de Semtech est un module de traqueur GPS/GNSS ultra-basse consommation qui intègre un récepteur GPS/GNSS haute sensibilité, une horloge temps réel (RTC), un processeur Arm Cortex-M0+ et une mémoire flash. Il prend en charge les signaux GPS, GLONASS, BeiDou, Galileo et QZSS et peut fonctionner avec une alimentation de seulement 1.8V à 3.3V. Le module peut être utilisé dans des applications telles que les trackers de localisation pour animaux, les suiveurs de vélos et les dispositifs de suivi de personnes.
+
+
+
+
+<!-- 2eme bloc: connectivité -->
+### 2eme bloc: connectivité:
+
+Pour le bloc de connectivité, Le tracker était déjà réclamée par l’utilisateur sur un serveur ttn, pour qu’on puisse l’utiliser  on a partagé les droits d'accès à ce device avec nous. Les droits partagés étaient restreints or on n'avait pas accès à tout ( partie intégration, partie de décodage encodage…). Donc, pour satisfaire cette partie de connectivité, et pouvoir récupérer les données pour pouvoir les traiter ensuite, nous avons implémenter un client MQTT sur notre propre serveur et se souscrire sur le topic de ce device qui est lui même considéré comme un client sur le broker implémenter sur le serveur TTN.
+
+
+
+
+<!-- 3eme bloc: traitement des données -->
+### 3eme bloc: traitement des données
+
+
+Pour le bloc de traitement des données on va s'intéresser à la configuration de notre device, au format des messages uplink et downlink échangés et le filtrage des messages. Notre Devise LR1110, comme mentionné précédemment, est déjà réclamé sur TTN, donc il réussit de faire le Join et envoyer son message à base64 qui sera décodé et transformé en JSON sur le serveur TTN, notre rôle c’est récupérer ce message qui sera sous forme de buffer string, le rendre sous format JSON encore une fois, le filtrer et puis stocker les donnée dans un fichier .log ou les présenter sur une interface graphique.
+
+
+<br />
+<div align="center">
+  <a href="https://github.com//Khalilsaidi-polybot/projet-LR1110/blob/main/README.md">
+    <img src="images/join reussi.PNG" alt="image" width=60% height=60%>
+  </a>
+</div>
+
+
+On a pu créer notre propre serveur en créant une instance élastique sur AWS de type linux debian. Sur notre machine virtuelle implémentée dans notre serveur, on a installé les outils nécessaires pour établir une communication avec le broker tels que Node-RED, TLS…) 
+
+
+<br />
+<div align="center">
+  <a href="https://github.com//Khalilsaidi-polybot/projet-LR1110/blob/main/README.md">
+    <img src="images/instance.jpg" alt="image" width=60% height=60%>
+  </a>
+</div>
+
+
+<br />
+<div align="center">
+  <a href="https://github.com//Khalilsaidi-polybot/projet-LR1110/blob/main/README.md">
+    <img src="images/cnction.jpg" alt="image" width=60% height=60%>
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 4eme bloc: présentation des données -->
+### 4eme bloc: présentation des données
 
 
 
