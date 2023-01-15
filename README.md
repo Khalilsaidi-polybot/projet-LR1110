@@ -54,9 +54,19 @@ Nous pouvons citer les trackers :  G62 ou Oyster de chez Digital matter ou les t
 ## Définition de l’architecture globale du systèmes (ensemble d’objets, service en ligne (cloud))
 
 
+Généralement l’architecture des systèmes IOT se ressemblent se. on a souvent au début de la chaîne un device pour l’acquisition des données ( capteurs, trackers…) , et puis on trouve le bloc de connectivité qui peut différer selon l'intérêt du projet(LORA, LTE-M, NBIOT…), ensuite on trouve le bloc du traitement des données afin de les rendre  exploitable et présentable, cette partie se fait dans un serveur et généralement sur une machine virtuelle ou on peut mettre des programmes tourner derrière (python,c++,c…) ou des outils de gestion des flux comme Node-RED qu’on a adopté comme solution dans notre projet.
+
+Finalement, on trouve le dernier bloc dans la chaîne IOT qui est la présentation des données, Ce dernier bloc peut varier entre la présentation et le stockage des données qui seront reboucler vers le bloc de traitement, encore une fois l'architecture dépend de l'intérêt du projet. 
+
+Dans le cas de  notre projet, on essaye de remonter la donnée d’un tracker de type LR1110 fournis par semtech. Vu que le tracker fonctionne en lora, on s’attend à une architecture globale qui ressemble à la figure ci-dessous.
 
 
-
+<br />
+<div align="center">
+  <a href="https://github.com//Khalilsaidi-polybot/projet-LR1110/blob/main/README.md">
+    <img src="images/LoRa-architecture-20.png" alt="Logo" width=60% height=60%>
+  </a>
+</div>
 
 
 
