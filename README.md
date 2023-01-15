@@ -15,19 +15,19 @@
 <details>
   <summary>Table des matières</summary>
   <ol>
-    <li><a href="#Analyse du marché des produits commerciaux concurrents">Analyse du marché des produits commerciaux concurrents</a></li>
-    <li><a href="#Définition de l’architecture globale du systèmes (ensemble d’objets, service en ligne (cloud))">Définition de l’architecture globale du systèmes (ensemble d’objets, service en ligne (cloud))</a>
+    <li><a href="#1- Analyse du marché des produits commerciaux concurrents">Analyse du marché des produits commerciaux concurrents</a></li>
+    <li><a href="#2- Définition de l’architecture globale du systèmes (ensemble d’objets, service en ligne (cloud))">Définition de l’architecture globale du systèmes (ensemble d’objets, service en ligne (cloud))</a>
       <ul>
-        <li><a href="#1er bloc: acquisition">1er bloc: acquisition</a></li>
-        <li><a href="#2eme bloc: connectivité">2eme bloc: connectivité</a></li>
-        <li><a href="#3eme bloc: traitement des données">3eme bloc: traitement des données</a></li>
-        <li><a href="#4eme bloc: présentation des données">4eme bloc: présentation des données</a></li>
+        <li><a href="#2-1- 1er bloc: acquisition">1er bloc: acquisition</a></li>
+        <li><a href="#2-2- 2eme bloc: connectivité">2eme bloc: connectivité</a></li>
+        <li><a href="#2-3- 3eme bloc: traitement des données">3eme bloc: traitement des données</a></li>
+        <li><a href="#2-4- 4eme bloc: présentation des données">4eme bloc: présentation des données</a></li>
       </ul> 
     </li>
-   <li><a href="#Définition de la sécurité globale (clé de chiffrage)">Définition de la sécurité globale (clé de chiffrage</a>
-      <li><a href="#Respect de la vie privée du service (RGPD)">Respect de la vie privée du service (RGPD)</a>
-      <li><a href="#Estimation du coût de la BOM du produit pour 5000 unités produites et estimation de la durée de vie de la batterie de l’objet">Estimation du coût de la BOM du produit pour 5000 unités produites et estimation de la durée de vie de la batterie de l’objet</a>
-       <li><a href="#Réaliser une analyse (brève) du cycle de vie du produit “durable” et “sobre” (ACV)">Réaliser une analyse (brève) du cycle de vie du produit “durable” et “sobre” (ACV)</a>
+   <li><a href="#3- Définition de la sécurité globale (clé de chiffrage)">Définition de la sécurité globale (clé de chiffrage</a>
+      <li><a href="#4- Respect de la vie privée du service (RGPD)">Respect de la vie privée du service (RGPD)</a>
+      <li><a href="#5- Estimation du coût de la BOM du produit pour 5000 unités produites et estimation de la durée de vie de la batterie de l’objet">Estimation du coût de la BOM du produit pour 5000 unités produites et estimation de la durée de vie de la batterie de l’objet</a>
+       <li><a href="#6- Réaliser une analyse (brève) du cycle de vie du produit “durable” et “sobre” (ACV)">Réaliser une analyse (brève) du cycle de vie du produit “durable” et “sobre” (ACV)</a>
   </ol>
 </details>
 
@@ -183,8 +183,8 @@ TTN (The Things Networks) est un réseau d’IOT qui utilise aussi le protocole 
 
 
 
-<!-- Définition de la sécurité globale (clé de chiffrage) -->
-## Définition de la sécurité globale (clé de chiffrage)
+<!-- Respect de la vie privée du service (RGPD) -->
+## 4- Respect de la vie privée du service (RGPD)
 
 
  
@@ -201,4 +201,34 @@ Tout cela entraine une violation de la vie privée.
  
 Durant nos phases de tests et de configuration du lr1110, nous avons modifié  les paramètres de durée de transmission de données, et sur l’accuracy en testant plusieurs scénarios différents :tel que la diminution du rayon afin d’avoir une meilleure précision dans la réception des données de localisation et la réduction du temps de communication permettant la mise à jour des données de géolocalisation plus fréquemment.
 
+
+<!-- Estimation du coût de la BOM du produit pour 5000 unités produites et estimation de la durée de vie de la batterie de l’objet -->
+## 5- Estimation du coût de la BOM du produit pour 5000 unités produites et estimation de la durée de vie de la batterie de l’objet
+
+
+
+
+
+
+
+
+Nous avons utilisé le tracker tel qu’il est vendu et nous n’avons pas eu besoin de réaliser le PCB , ou le boîtier contenant le microcontrôleur, connecteurs , et module RF. Nous avons uniquement interagit avec la partie logicielle du tracker pour le faire fonctionner. De plus nous n’avons pas accès aux fournisseurs de semtech, Il sera donc difficile d’en faire une estimation du coût de la BOM.
+ 
+Le coût du traceur se retrouve au prix d’environ 80 €. Cela dit, nous avons identifié les éléments qui composent l’intérieur du traceur puisque nous l’avons démonté à plusieurs reprises lorsque celui-ci ne voulait pas démarrer. Ainsi, il est composé du module Lora semtech LR1110, le MCU, la panoplie des composants électroniques, la batteries (2 piles ½ AA), les connecteurs et la PCB.
+ 
+A partir de ces éléments, on estime le cout d’achat pour chaque composant : le MCU à environ 5-10 €,mémoire flash à 2€,module Lora semetech lr1110 à 20€, composant électronique à environ 4€, batterie environ 3€, boîtier environ 4€ . On peut estimer le cout total de la BOM pour 5000 unités produites à environ 75000€ - 110000€. Les prix incluent également le coût de tests et de certification ETSI du produit.
+ 
+Ici, la batterie est de type demi-AA et la durée de vie de la batterie dépend de plusieurs paramètres tel que la fréquence et conditions d'utilisation. D’après la documentation technique, elle stipule que pour une utilisation normale (device non altéré par la température de stockage par exemple), la durée est de 2 à 3ans.
+
+
+
+
+<!-- Réaliser une analyse (brève) du cycle de vie du produit “durable” et “sobre” (ACV) -->
+## 6- Réaliser une analyse (brève) du cycle de vie du produit “durable” et “sobre” (ACV)
+
+
+
+L’analyse du cycle de vie d’un produit correspond à l’analyse des impacts environnementaux du LR1110 depuis la production de celui-ci où sont pris en compte l’impact des matières premières tel que le silicium permettant la réalisation des chips, le plastique pour l’enveloppe ou d’autres matières pour le boitier. La phase de production est celle ou il faut prendre le plus en compte l’empreinte environnementale (énergie dépensée, pollution émise lors de l’impression et assemblage des produits composant le tracker…).
+
+Enfin, la consommation d’énergie est un autre des facteurs importants à prendre en compte. Cependant il n’est pas facile de justifier ces étapes avec des nombres concrètement puisqu’il est quasi impossible de remonter toute la chaîne de production, fabrication et d’assemblage.
 
