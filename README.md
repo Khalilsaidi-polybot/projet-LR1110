@@ -11,7 +11,7 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>table des matières</summary>
+  <summary>TABLE OF CONTENTS</summary>
   <ol>
     <li><a href="#Analyse du marché des produits commerciaux concurrents">Analyse du marché des produits commerciaux concurrents</a></li>
     <li><a href="#Définition de l’architecture globale du systèmes (ensemble d’objets, service en ligne (cloud))">Définition de l’architecture globale du systèmes (ensemble d’objets, service en ligne (cloud))</a>
