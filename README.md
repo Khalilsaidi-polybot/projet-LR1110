@@ -182,3 +182,23 @@ La sécurité des gateways Lora repose sur deux protocoles de sécurité : AES-1
 TTN (The Things Networks) est un réseau d’IOT qui utilise aussi le protocole de sécurité AES-128 qui va protéger en chiffrant les données transmises. Le protocole de communication IOT utilisé est : MQTT (Message Queue Telemetry Transport) et permet aux devices IoT (le tracker) de se connecter, dans la finalité, au serveur aws et recevoir les données de géolocalisation. Nous utilisons le protocole de chiffrement TLS pour chiffrer les données transmises
 
 
+
+<!-- Définition de la sécurité globale (clé de chiffrage) -->
+## Définition de la sécurité globale (clé de chiffrage)
+
+
+ 
+D’après la RGPD, les dispositifs de traceurs GPS utilisés pour suivre une personne, un objet, un animal ou un véhicule, se fait uniquement si celles-ci ont été prévenues (ou leurs propriétaires). Autrement, c’est considéré comme une entrave aux libertés. La loi prévoit une peine de prison pouvant aller jusqu’à 5 ans avec amendes qui varie dépendamment de si l’on est une personne morale ou physique.                	    
+Cependant les normes sont différentes sur les balises gps relevant du domaine militaire et civil, offrant de meilleures  précisions sur les applications militaires. Cependant, il n’est pas indiqué le rayon de précision (en mètres) sur la localisation.
+ 
+Notre projet traite des données personnelles en l’occurrence avec la remontée des informations de localisations qu’il transmet continuellement ce qui signifie que toutes 10 minutes la position est remise à jour avec les nouvelles données. Il existe bel et bien des risques d’atteintes au respect de la vie privée au dépend de notre projet IOT.
+ 
+Nous l’avons utilisé à des fins pédagogiques dans le but de simuler le tracking de bovins. Les risques d’atteintes à la vie privée du projet IOT:
+ 
+#### -          La collecte de données personnelles sur la position de localisation du trackeur à des fins malveillantes ou
+#### -          Commerciales pour la revente des données à des services Tiers sans consentement des utilisateurs,
+Tout cela entraine une violation de la vie privée.
+ 
+Durant nos phases de tests et de configuration du lr1110, nous avons modifié  les paramètres de durée de transmission de données, et sur l’accuracy en testant plusieurs scénarios différents :tel que la diminution du rayon afin d’avoir une meilleure précision dans la réception des données de localisation et la réduction du temps de communication permettant la mise à jour des données de géolocalisation plus fréquemment.
+
+
