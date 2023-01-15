@@ -4,18 +4,12 @@
     <img src="images/logo inp Polytech grenoble.png" alt="Logo" width=30% height=30%>
   </a>
 </div>
-
-
 <!-- title -->
 # projet-LR1110    
 
-
-
-
-
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary>table des matières</summary>
   <ol>
     <li><a href="#Analyse du marché des produits commerciaux concurrents">Analyse du marché des produits commerciaux concurrents</a></li>
     <li><a href="#Définition de l’architecture globale du systèmes (ensemble d’objets, service en ligne (cloud))">Définition de l’architecture globale du systèmes (ensemble d’objets, service en ligne (cloud))</a>
