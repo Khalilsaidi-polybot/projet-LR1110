@@ -169,5 +169,16 @@ Pour le dernier bloc on a choisi de présenter la position du tracker sur un pla
   </a>
 </div>
 
+<!-- Définition de la sécurité globale (clé de chiffrage) -->
+## Définition de la sécurité globale (clé de chiffrage)
+
+  Sur l’aspect matériel, le tracker LR1110 dispose d’une suite d’octets définissant le Dev EUI ET LE JoinEUI. Ces codes sont attribués à titre unique pour identifier un appareil dans un réseau Lora : le JoinEUI est utilisé pour l’inscription du tracker dans le réseau et le DevEUI permet d’identifier de manière unique le tracker dans le réseau Lora.
+
+On l’utilise pour établir une communication sécurisée. Le tracker est basé sur un algorithme de chiffrement par blocs AES-128, les données sont traitées par blocs de 128 bits. Il permet de sécuriser les données de localisations et les communications établies. Il prend en charge l’authentification entre appareils à l’aide de clés partagés (via protocole LoraWAN) et permet la confidentialité des informations pour empêcher les accès non autorisés.
+ 
+      - Sur l’aspect logiciel :
+ 
+La sécurité des gateways Lora repose sur deux protocoles de sécurité : AES-128 et OTAA, permettant de chiffrer les données les données transmises et de gérer la configuration des appareils connectés.
+TTN (The Things Networks) est un réseau d’IOT qui utilise aussi le protocole de sécurité AES-128 qui va protéger en chiffrant les données transmises. Le protocole de communication IOT utilisé est : MQTT (Message Queue Telemetry Transport) et permet aux devices IoT (le tracker) de se connecter, dans la finalité, au serveur aws et recevoir les données de géolocalisation. Nous utilisons le protocole de chiffrement TLS pour chiffrer les données transmises
 
 
