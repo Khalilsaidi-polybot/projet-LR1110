@@ -5,8 +5,8 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#Analyse du marché des produits commerciaux concurrents">Analyse du marché des produits commerciaux concurrents</a>
-    <li><a href="#Définition de l’architecture globale du systèmes (ensemble d’objets, service en ligne (cloud))">Définition de l’architecture globale du systèmes (ensemble d’objets, service en ligne (cloud))</a></li>
+    <li><a href="#Analyse du marché des produits commerciaux concurrents">Analyse du marché des produits commerciaux concurrents</a></li>
+    <li><a href="#Définition de l’architecture globale du systèmes (ensemble d’objets, service en ligne (cloud))">Définition de l’architecture globale du systèmes (ensemble d’objets, service en ligne (cloud))</a>
       <ul>
         <li><a href="#1er bloc: acquisition">1er bloc: acquisition</a></li>
         <li><a href="#2eme bloc: connectivité">2 bloc: connectivité</a></li>
