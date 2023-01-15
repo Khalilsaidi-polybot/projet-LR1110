@@ -1,4 +1,3 @@
-<br />
 <div align="right">
   <a href="https://github.com//Khalilsaidi-polybot/projet-LR1110/blob/main/README.md">
     <img src="images/logo inp Polytech grenoble.png" alt="Logo" width=30% height=30%>
@@ -73,6 +72,7 @@ Dans le cas de  notre projet, on essaye de remonter la donnée d’un tracker de
  Architecture globale du systeme  
   </a>
 </div>  
+<br />
 
 On fait communiquer le tracker en lora avec la gateway fournis par fablab, récupérer les donnée en temps réel depuis le serveur TTN et finalement faire une intégration MQTT qui nous permettra de récupérer les données sur notre propre serveur afin de les traiter et les présenter sur un autre endpoint ( qu’il soit un fichier .log sur notre machine virtuelle ou une application sur un téléphone).
 
