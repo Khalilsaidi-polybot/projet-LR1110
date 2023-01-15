@@ -101,15 +101,6 @@ Pour le bloc de connectivité, Le tracker était déjà réclamée par l’utili
 
 Pour le bloc de traitement des données on va s'intéresser à la configuration de notre device, au format des messages uplink et downlink échangés et le filtrage des messages. Notre Devise LR1110, comme mentionné précédemment, est déjà réclamé sur TTN, donc il réussit de faire le Join et envoyer son message à base64 qui sera décodé et transformé en JSON sur le serveur TTN, notre rôle c’est récupérer ce message qui sera sous forme de buffer string, le rendre sous format JSON encore une fois, le filtrer et puis stocker les donnée dans un fichier .log ou les présenter sur une interface graphique.
 
-
-<br />
-<div align="center">
-  <a href="https://github.com//Khalilsaidi-polybot/projet-LR1110/blob/main/README.md">
-    <img src="images/join reussi.PNG" alt="image" width=60% height=60%>
-  </a>
-</div>
-
-
 On a pu créer notre propre serveur en créant une instance élastique sur AWS de type linux debian. Sur notre machine virtuelle implémentée dans notre serveur, on a installé les outils nécessaires pour établir une communication avec le broker tels que Node-RED, TLS…) 
 
 
@@ -152,6 +143,26 @@ On a pu créer notre propre serveur en créant une instance élastique sur AWS d
 
 <!-- 4eme bloc: présentation des données -->
 ### 4eme bloc: présentation des données
+
+Pour le bloc de traitement des données on va s'intéresser à la configuration de notre device, au format des messages uplink et downlink échangés et le filtrage des messages. Notre Devise LR1110, comme mentionné précédemment, est déjà réclamé sur TTN, donc il réussit de faire le Join et envoyer son message à base64 qui sera décodé et transformé en JSON sur le serveur TTN, notre rôle c’est récupérer ce message qui sera sous forme de buffer string, le rendre sous format JSON encore une fois, le filtrer et puis stocker les donnée dans un fichier .log ou les présenter sur une interface graphique.
+
+<br />
+<div align="center">
+  <a href="https://github.com//Khalilsaidi-polybot/projet-LR1110/blob/main/README.md">
+    <img src="images/join reussi.PNG" alt="image" width=60% height=60%>
+  </a>
+</div>
+
+
+
+<br />
+<div align="center">
+  <a href="https://github.com//Khalilsaidi-polybot/projet-LR1110/blob/main/README.md">
+    <img src="images/flux.PNG" alt="image" width=60% height=60%>
+  </a>
+</div>
+
+
 
 
 
