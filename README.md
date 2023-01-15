@@ -1,8 +1,11 @@
+<!-- logo -->
+
+
 <br />
 <div align="right">
-    <img src="https://github.com/Khalilsaidi-polybot/projet-LR1110/blob/main/images/logo%20inp%20Polytech%20grenoble.png)" width="80" height="80">
+    <img src="https://github.com/Khalilsaidi-polybot/projet-LR1110/blob/main/images/logo%20inp%20Polytech%20grenoble.png)" alt="logo" width="80" height="80">
   </a>
-
+<!-- title -->
 # projet-LR1110    
 
 
