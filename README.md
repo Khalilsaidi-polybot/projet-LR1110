@@ -27,6 +27,9 @@
       <li><a href="#4- Respect de la vie privée du service (RGPD)">Respect de la vie privée du service (RGPD)</a>
       <li><a href="#5- Estimation du coût de la BOM du produit pour 5000 unités produites et estimation de la durée de vie de la batterie de l’objet">Estimation du coût de la BOM du produit pour 5000 unités produites et estimation de la durée de vie de la batterie de l’objet</a>
        <li><a href="#6- Analyse (brève) du cycle de vie du produit “durable” et “sobre” (ACV)">Réaliser une analyse (brève) du cycle de vie du produit “durable” et “sobre” (ACV)</a>
+         
+          <li><a href="#7- Analyse d’avantages et inconvénients des produits concurrents"> Analyse d’avantages et inconvénients des produits concurrents</a>
+        
   </ol>
 </details>
 
@@ -296,6 +299,15 @@ L’analyse du cycle de vie d’un produit correspond à l’analyse des impacts
 Enfin, la consommation d’énergie est un autre des facteurs importants à prendre en compte. Cependant il n’est pas facile de justifier ces étapes avec des nombres concrètement puisqu’il est quasi impossible de remonter toute la chaîne de production, fabrication et d’assemblage.
 
 
+ Analyse d’avantages et inconvénients des produits concurrents
+<!-- Analyse d’avantages et inconvénients des produits concurrents -->
+## 7- Analyse d’avantages et inconvénients des produits concurrents
 
+| Types de Trackers | Technologie Lora | Longue portée | Faible consommation d’énergie | Transmission rapide des données | Prix |
+|:-----------------:|:----------------:|:-------------:|:-----------------------------:|:-------------------------------:|:----:|
+|       LR1110      |         X        |       ++      |               ++              |                ++               |   +  |
+|       G62 DM      |         X        |       ++      |               ++              |               +++               |  ++  |
+|    IOT Factory    |         X        |       ++      |               ++              |                ++               |   +  |
+|   Track Abeeway   |         X        |      +++      |              +++              |                ++               |  +++ |
 
 
